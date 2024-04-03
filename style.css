@@ -314,6 +314,19 @@ span {
     color: var(--second-bg-color);
 }
 
+@media only screen and (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for screens up to 768px */
+    }
+}
+
+/* Media query for even smaller screens, like mobile phones */
+@media only screen and (max-width: 480px) {
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr); /* Single column for screens up to 480px */
+    }
+}
+
 .contact h2 {
     margin-bottom: 3rem;
 }
