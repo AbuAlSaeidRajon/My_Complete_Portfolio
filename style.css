@@ -18,6 +18,31 @@
     --main-color: #0ef;
 }
 
+@media only screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: var(--bg-color);
+      padding: 10px;
+    }
+    .navbar a {
+      padding: 10px;
+      color: var(--text-color);
+      text-decoration: none;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: var(--second-bg-color);
+    }
+    .show {
+      display: block;
+    }
+  }
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
